@@ -15,12 +15,13 @@ export default function Navbar({ transparent }: Props) {
   const router = usePathname();
   const [open, setOpen] = useState(false);
   const [scroll, setScroll] = useState(false);
+  const [hash, setHash] = useState("");
   const changeNavBg = () => {
     window.scrollY >= 1 ? setScroll(true) : setScroll(false);
   };
-  const hash = window.location.hash;
 
   useEffect(() => {
+    setHash(window.location.hash);
     window.addEventListener("scroll", changeNavBg);
     return () => {
       window.removeEventListener("scroll", changeNavBg);

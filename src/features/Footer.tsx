@@ -25,12 +25,12 @@ function Footer() {
               </div>
               (+54 9) 2257 589216
             </a>
-            <p className="flex flex-row items-center font-bold text-lg text-primary gap-2">
+            <div className="flex flex-row items-center font-bold text-lg text-primary gap-2">
               <div className="h-5 w-5">
                 <Clock />
               </div>
               Lunes a viernes - 09:00 a 19:00
-            </p>
+            </div>
             <a
               href="mailto:contacto@miwa.com.ar"
               target="_blank"

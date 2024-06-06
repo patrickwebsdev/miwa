@@ -1,7 +1,7 @@
 import Title from "@/components/Title";
 import { draftMode } from "next/headers";
 import VideoJS from "@/components/VideoJS";
-import CarouselContainer from "@/features/Carousel";
+import CarouselContainer from "@/components/Carousel";
 import { getInformation } from "@/lib/api";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { notFound } from "next/navigation";

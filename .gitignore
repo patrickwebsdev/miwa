@@ -16,6 +16,9 @@
 # production
 /build
 
+# google reviews
+/public/reviews.json
+
 # misc
 .DS_Store
 *.pem

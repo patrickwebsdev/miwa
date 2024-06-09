@@ -19,9 +19,8 @@ jobs:
         env:
           GOOGLE_REVIEWS_API: ${{ secrets.GOOGLE_REVIEWS_API }}
         run: node src/lib/reviews.js
-      - run:
-        git config user.name patrickwebsdev
-        git config user.email contacto@patricioalmada.com.ar
-        git add .
-        git commit -m "[BOT] Update Google Maps Reviews"
-        git push origin main
+      - run: git config user.name patrickwebsdev
+          git config user.email contacto@patricioalmada.com.ar
+          git add .
+          git commit -m "[BOT] Update Google Maps Reviews"
+          git push origin main

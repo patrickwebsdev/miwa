@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Hamburguer from "@/icons/Hamburguer";
 import Logo from "@/components/Logo";
 import Link from "next/link";
+import Hotjar from "@hotjar/browser";
 import { usePathname } from "next/navigation";
 
 type Props = {
@@ -16,17 +17,22 @@ export default function Navbar({ transparent }: Props) {
   const [open, setOpen] = useState(false);
   const [scroll, setScroll] = useState(false);
   const [hash, setHash] = useState("");
+  const pathname = usePathname();
   const changeNavBg = () => {
     window.scrollY >= 1 ? setScroll(true) : setScroll(false);
   };
 
   useEffect(() => {
+    const siteId = 5017467;
+    const hotjarVersion = 6;
+    Hotjar.init(siteId, hotjarVersion);
+    Hotjar.stateChange(pathname);
     setHash(window.location.hash);
     window.addEventListener("scroll", changeNavBg);
     return () => {
       window.removeEventListener("scroll", changeNavBg);
     };
-  }, []);
+  }, [pathname]);
 
   return (
     <nav
@@ -109,15 +115,7 @@ export default function Navbar({ transparent }: Props) {
             <li>
               <Link
                 href="/#reviews"
-                className={`block py-2 pl-3 pr-3 ${
-                  hash == "#reviews"
-                    ? transparent
-                      ? scroll
-                        ? "text-primary"
-                        : "text-secondary-0"
-                      : "text-primary"
-                    : ""
-                }`}
+                className={`block py-2 pl-3 pr-3`}
                 onClick={() => setOpen(!open)}
               >
                 Reseñas

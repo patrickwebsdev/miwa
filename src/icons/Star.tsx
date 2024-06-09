@@ -1,6 +1,8 @@
 import React from "react";
-
-function StarFilled() {
+type Props = {
+  fill: boolean;
+};
+function Star({ fill }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,7 +10,7 @@ function StarFilled() {
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke="currentColor"
-      className="fill-current"
+      className={fill ? "fill-current" : ""}
     >
       <path
         strokeLinecap="round"
@@ -19,4 +21,4 @@ function StarFilled() {
   );
 }
 
-export default StarFilled;
+export default Star;

@@ -26,3 +26,7 @@ section[id] {
 .smt-6 {
   scroll-margin-top: 6rem;
 }
+
+.fill-current {
+  fill: currentColor;
+}

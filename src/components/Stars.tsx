@@ -1,5 +1,4 @@
-import StarFilled from "@/icons/StarFilled";
-import StarOutline from "@/icons/StarOutline";
+import Star from "@/icons/Star";
 import React from "react";
 
 type Props = {
@@ -21,7 +20,7 @@ function Stars({ rating, max }: Props) {
             className="text-primary [&>svg]:h-5 [&>svg]:w-5"
             data-twe-rating-icon-ref=""
           >
-            <StarFilled />
+            <Star fill={true} />
           </span>
         </li>
       ))}
@@ -31,7 +30,7 @@ function Stars({ rating, max }: Props) {
             className="text-primary [&>svg]:h-5 [&>svg]:w-5"
             data-twe-rating-icon-ref=""
           >
-            <StarOutline />
+            <Star fill={false} />
           </span>
         </li>
       ))}

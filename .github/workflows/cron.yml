@@ -14,9 +14,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-      - name: Create .env file
-        env:
-          GOOGLE_REVIEWS_API: ${{ secrets.GOOGLE_REVIEWS_API }}
 
       - name: Run data fetching script
+        env:
+          GOOGLE_REVIEWS_API: ${{ secrets.GOOGLE_REVIEWS_API }}
         run: node src/lib/reviews.js

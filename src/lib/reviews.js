@@ -21,7 +21,7 @@ async function saveReviews() {
   try {
     const datosGoogleMaps = await getReviews();
     const jsonDatosGoogleMaps = JSON.stringify(datosGoogleMaps.reviews, null, 2);
-    fs.writeFileSync('../../public/reviews.json', jsonDatosGoogleMaps);
+    fs.writeFileSync('src/public/reviews.json', jsonDatosGoogleMaps);
     console.log('Archivo JSON de datos de Google Maps generado con éxito.');
   } catch (error) {
     console.error('Error al generar los archivos JSON:', error);

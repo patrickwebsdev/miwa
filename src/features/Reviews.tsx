@@ -87,7 +87,12 @@ function Reviews() {
         })}
       </div>
       <div className="flex justify-center items-center mt-5">
-        <Button variant="primary">Más reseñas</Button>
+        <Button
+          href="https://maps.app.goo.gl/UgNChN6LvJaANMV86"
+          variant="primary"
+        >
+          Más reseñas
+        </Button>
       </div>
     </Container>
   );

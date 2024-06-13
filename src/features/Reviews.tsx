@@ -75,7 +75,8 @@ function Reviews() {
   };
   useEffect(() => {
     fetchJson();
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <Container className="py-10" background="smt-6" id="reviews">
       <Title className="text-primary mb-10 text-center">

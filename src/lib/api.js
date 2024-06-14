@@ -182,7 +182,7 @@ export async function getInformation(
 export async function getCharacteristics() {
   const characteristics = await fetchGraphQL(
     `query {
-        caracteristicaCollection(order: sys_firstPublishedAt_ASC, limit: 4, preview: false) {
+        caracteristicaCollection(order: sys_firstPublishedAt_ASC, preview: false) {
           items {
             ${CHARACTERISTICS_GRAPHQL_FIELDS}
         }

@@ -19,15 +19,14 @@ async function Characteristics() {
   return (
     <Container className="mb-10" background="smt-10" id="services">
       <GrassContainer>
-        {characteristics.map((data, index, orgArray) =>
-          index == orgArray.length - 1 ? (
-            <Characteristic key={index} last={true} first={false} {...data} />
-          ) : index == 0 ? (
-            <Characteristic key={index} last={false} first={true} {...data} />
-          ) : (
-            <Characteristic key={index} last={false} first={false} {...data} />
-          )
-        )}
+        {characteristics.map((data, index, orgArray) => (
+          <Characteristic
+            key={index}
+            last={index == orgArray.length - 1}
+            odd={index === orgArray.length - 1 && orgArray.length % 2 !== 0}
+            {...data}
+          />
+        ))}
       </GrassContainer>
     </Container>
   );

@@ -17,5 +17,5 @@ export async function GET(request: Request) {
   if (!post) {
     return new Response("Invalid slug", { status: 401 });
   }
-  redirect(`/trabajos/${post.slug}`);
+  redirect(`/trabajos-preview/${post.slug}`);
 }

@@ -1,5 +1,4 @@
 "use client";
-import { Carousel, initTWE } from "tw-elements";
 import Image from "next/image";
 import React, { useEffect } from "react";
 
@@ -13,7 +12,11 @@ type ImagesArray = {
 
 function CarouselContainer({ images }: CarouselProps) {
   useEffect(() => {
-    initTWE({ Carousel });
+    const init = async () => {
+      const { Carousel, initTWE } = await import("tw-elements");
+      initTWE({ Carousel });
+    };
+    init();
   }, []);
   return (
     <div

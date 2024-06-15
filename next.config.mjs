@@ -29,6 +29,7 @@ const nextConfig = {
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" },
+          { key: "Content-Security-Policy", value: "frame-ancestors 'self' https://app.contentful.com" },
           {
             key: "Access-Control-Allow-Methods",
             value: "GET",

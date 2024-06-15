@@ -83,6 +83,8 @@ export default function workPage({ params }: Props) {
         enableLiveUpdates={true}
         targetOrigin="https://app.contentful.com"
         debugMode={false}
+        environment="master"
+        space="2ys6317zvenc"
       >
         <Navbar transparent={false} />
         <Container

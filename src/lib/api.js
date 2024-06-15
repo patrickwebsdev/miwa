@@ -1,5 +1,6 @@
 "use server";
 const ARTICLE_GRAPHQL_FIELDS = `
+      __typename
       sys {
         id
       }

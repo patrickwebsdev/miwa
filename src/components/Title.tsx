@@ -5,8 +5,12 @@ interface TitleProps {
   className?: string;
 }
 
-function Title({ children, className }: TitleProps) {
-  return <h3 className={`font-bold text-4xl ${className}`}>{children}</h3>;
+function Title({ children, className, ...props }: TitleProps) {
+  return (
+    <h3 className={`font-bold text-4xl ${className}`} {...props}>
+      {children}
+    </h3>
+  );
 }
 
 export default Title;

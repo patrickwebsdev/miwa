@@ -65,7 +65,6 @@ export default function workPage({ params }: Props) {
         setMoreArticles(fetchedMoreArticles);
       } catch (error) {
         console.error("Error fetching data:", error);
-        // Handle error state as needed
       }
     };
 
@@ -75,16 +74,16 @@ export default function workPage({ params }: Props) {
   useContentfulLiveUpdates(article);
 
   if (!article) {
-    return <div>Loading...</div>; // or handle error state
+    return <div>Loading...</div>;
   }
   return (
     <>
       <ContentfulLivePreviewProvider
-        locale="en-US" // Required: allows you to set the locale once and have it reused throughout the preview.
-        enableInspectorMode={true} // Optional: allows you to toggle inspector mode which is on by default.
-        enableLiveUpdates={true} // Optional: allows you to toggle live updates which are on by default.
-        targetOrigin="https://app.contentful.com" // Optional: allows you to configure the allowed host(s) of live preview (default: ['https://app.contentful.com', 'https://app.eu.contentful.com'])
-        debugMode={false} // Optional: allows you to toggle debug mode which is off by default.
+        locale="en-US"
+        enableInspectorMode={true}
+        enableLiveUpdates={true}
+        targetOrigin="https://app.contentful.com"
+        debugMode={false}
       >
         <Navbar transparent={false} />
         <Container
@@ -134,26 +133,26 @@ export default function workPage({ params }: Props) {
             <div className="flex justify-center items-center">
               <CarouselContainer images={article.imagesCollection.items} />
             </div>
-            <Subtitle
-              className="text-primary mb-2 mt-3"
+            <Subtitle className="text-primary mb-2 mt-3">
+              Detalles del trabajo
+            </Subtitle>
+            <div
               {...ContentfulLivePreview.getProps({
                 entryId: article.sys.id,
                 fieldId: "details",
               })}
             >
-              Detalles del trabajo
-            </Subtitle>
-            {documentToReactComponents(article.details.json)}
-            <Subtitle
-              className="text-primary mb-2 mt-5"
+              {documentToReactComponents(article.details.json)}
+            </div>
+            <Subtitle className="text-primary mb-2 mt-5">Descripción</Subtitle>
+            <div
               {...ContentfulLivePreview.getProps({
                 entryId: article.sys.id,
                 fieldId: "description",
               })}
             >
-              Descripción
-            </Subtitle>
-            {documentToReactComponents(article.description.json)}
+              {documentToReactComponents(article.description.json)}
+            </div>
           </main>
           <aside className="lg:col-span-3 col-span-12">
             <Subtitle className="text-primary mb-5 mt-5">

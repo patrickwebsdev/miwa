@@ -48,6 +48,7 @@ type ArticleType = {
 export default function workPage({ params }: Props) {
   const [article, setArticle] = useState<ArticleType | null>(null);
   const [moreArticles, setMoreArticles] = useState<ArticleType[]>([]);
+  const updatedArticle = useContentfulLiveUpdates(article);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -70,8 +71,6 @@ export default function workPage({ params }: Props) {
 
     fetchData();
   }, [params.slug]);
-
-  useContentfulLiveUpdates(article);
 
   if (!article) {
     return <div>Loading...</div>;
@@ -98,7 +97,7 @@ export default function workPage({ params }: Props) {
                 fieldId: "title",
               })}
             >
-              {article.title}
+              {updatedArticle?.title}
             </Title>
             <div className="flex items-center flex-row mb-5 gap-3 divide-x divide-black">
               <div className="flex items-center flex-row gap-2">
@@ -112,7 +111,7 @@ export default function workPage({ params }: Props) {
                     fieldId: "date",
                   })}
                 >
-                  {formatDate(article.date)}
+                  {formatDate(updatedArticle?.date || "")}
                 </Subtitle>
               </div>
               <div className="flex items-center flex-row pl-2 gap-2">
@@ -126,12 +125,14 @@ export default function workPage({ params }: Props) {
                     fieldId: "location",
                   })}
                 >
-                  {article.location}
+                  {updatedArticle?.location}
                 </Subtitle>
               </div>
             </div>
             <div className="flex justify-center items-center">
-              <CarouselContainer images={article.imagesCollection.items} />
+              <CarouselContainer
+                images={updatedArticle?.imagesCollection.items || []}
+              />
             </div>
             <Subtitle className="text-primary mb-2 mt-3">
               Detalles del trabajo
@@ -142,7 +143,7 @@ export default function workPage({ params }: Props) {
                 fieldId: "details",
               })}
             >
-              {documentToReactComponents(article.details.json)}
+              {documentToReactComponents(updatedArticle?.details.json)}
             </div>
             <Subtitle className="text-primary mb-2 mt-5">Descripción</Subtitle>
             <div
@@ -151,7 +152,7 @@ export default function workPage({ params }: Props) {
                 fieldId: "description",
               })}
             >
-              {documentToReactComponents(article.description.json)}
+              {documentToReactComponents(updatedArticle?.description.json)}
             </div>
           </main>
           <aside className="lg:col-span-3 col-span-12">

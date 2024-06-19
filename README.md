@@ -66,7 +66,7 @@ La sección de contacto proporciona todos los medios necesarios para que los cli
 
 Aprovechamos una combinación de tecnologías avanzadas para asegurar que MIWA tenga una presencia digital sólida y robusta, reflejando así su firme compromiso con la calidad y excelencia en el servicio.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Volver arriba</a>)</p>
 
 
 
@@ -93,7 +93,7 @@ Aprovechamos una combinación de tecnologías avanzadas para asegurar que MIWA t
 
 -   **Tailwind CSS:** Framework de CSS utilitario para una maquetación rápida y estilizada.
 -   **tw-elements:** Extensión de Tailwind CSS para componentes adicionales.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Volver arriba</a>)</p>
 
 
 
@@ -122,7 +122,7 @@ Aprovechamos una combinación de tecnologías avanzadas para asegurar que MIWA t
 
 - [ ] Cambio de API Key de Google Maps
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Volver arriba</a>)</p>
 
 
 <!-- LICENSE -->
@@ -130,7 +130,7 @@ Aprovechamos una combinación de tecnologías avanzadas para asegurar que MIWA t
 
 Este proyecto está protegido por derechos de autor bajo la licencia "All Rights Reserved". Esto significa que no se otorgan permisos para copiar, modificar, distribuir o usar este software sin el permiso explícito del autor. Consulte `LICENSE` para más información.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Volver arriba</a>)</p>
 
 
 
@@ -139,7 +139,7 @@ Este proyecto está protegido por derechos de autor bajo la licencia "All Rights
 
 <a  href="https://www.linkedin.com/in/patrickwebsdev/"  target="blank"><img  src="https://skillicons.dev/icons?i=linkedin"></a>  <a  href="mailto:contacto@patricioalmada.com.ar"  target="blank"><img  src="https://skillicons.dev/icons?i=gmail"></a>  <a  href="https://discordapp.com/users/415654011887419413"  target="blank"><img  src="https://skillicons.dev/icons?i=discord"></a>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Volver arriba</a>)</p>
 
 
 
@@ -154,7 +154,7 @@ Este proyecto está protegido por derechos de autor bajo la licencia "All Rights
 * [TailwindCSS](https://tailwindcss.com/)
 * [React-Countup](https://github.com/glennreyes/react-countup)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Volver arriba</a>)</p>
 
 
 

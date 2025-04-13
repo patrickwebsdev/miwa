@@ -19,8 +19,7 @@
     "snippet": "Muy buen servicio. Y el personal están muy bien capacitados.",
     "extracted_snippet": {
       "original": "Muy buen servicio. Y el personal están muy bien capacitados."
-    },
-    "likes": 1
+    }
   },
   {
     "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMODRxSHhBRRAB!2m1!1s0x0:0x5bdf3f7eeec53582!3m1!1s2@1:CIHM0ogKEICAgICL84qHxAE%7CCgwIje3dswYQuJeslQI%7C?hl=es-419",
@@ -42,8 +41,7 @@
     "snippet": "Muy buen servicio.",
     "extracted_snippet": {
       "original": "Muy buen servicio."
-    },
-    "likes": 1
+    }
   },
   {
     "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMczY3d29RRRAB!2m1!1s0x0:0x5bdf3f7eeec53582!3m1!1s2@1:CIHM0ogKEICAgICLs67woQE%7CCgwIx8zdswYQqMGp3wE%7C?hl=es-419",
@@ -65,8 +63,7 @@
     "snippet": "La verdad muy recomendable muy atentos y responsables... 👍🏼",
     "extracted_snippet": {
       "original": "La verdad muy recomendable muy atentos y responsables... 👍🏼"
-    },
-    "likes": 0
+    }
   },
   {
     "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMODdHY1l3EAE!2m1!1s0x0:0x5bdf3f7eeec53582!3m1!1s2@1:CIHM0ogKEICAgICL87GcYw%7CCgsIzPjdswYQkIq_OA%7C?hl=es-419",
@@ -88,8 +85,7 @@
     "snippet": "Muy recomendable la verdad me hicieron un laburo muy prolijo y a buen precio",
     "extracted_snippet": {
       "original": "Muy recomendable la verdad me hicieron un laburo muy prolijo y a buen precio"
-    },
-    "likes": 1
+    }
   },
   {
     "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMb2VIZU1nEAE!2m1!1s0x0:0x5bdf3f7eeec53582!3m1!1s2@1:CIHM0ogKEICAgICLoeHeMg%7CCgwI8uPNswYQ0PTpsAE%7C?hl=es-419",
@@ -111,8 +107,7 @@
     "snippet": "Excelente calidad muy prolijos y responsables",
     "extracted_snippet": {
       "original": "Excelente calidad muy prolijos y responsables"
-    },
-    "likes": 2
+    }
   },
   {
     "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMMWZpYXpRRRAB!2m1!1s0x0:0x5bdf3f7eeec53582!3m1!1s2@1:CIHM0ogKEICAgICL1fiazQE%7CCgwIg_vXswYQgLaV7QE%7C?hl=es-419",
@@ -133,8 +128,7 @@
     "snippet": "Excelente calidad, muy responsables y prolijos, ALTAMENTE RECOMENDABLE.",
     "extracted_snippet": {
       "original": "Excelente calidad, muy responsables y prolijos, ALTAMENTE RECOMENDABLE."
-    },
-    "likes": 2
+    }
   },
   {
     "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMd0k2MmdnRRAB!2m1!1s0x0:0x5bdf3f7eeec53582!3m1!1s2@1:CIHM0ogKEICAgIDLwI62ggE%7CCgwItf_lswYQwOXvoQM%7C?hl=es-419",
@@ -150,14 +144,13 @@
       "contributor_id": "116478096131302313085",
       "thumbnail": "https://lh3.googleusercontent.com/a-/ALV-UjWDDHmCM0N1do_YfrR62mZabT2IZnzQzomZFOw3Yo4DLi9HRV56=s120-c-rp-mo-ba2-br100",
       "local_guide": true,
-      "reviews": 26,
+      "reviews": 30,
       "photos": 0
     },
     "snippet": "Excelente trabajo y mantenimiento. Altamente recomendable y responsable",
     "extracted_snippet": {
       "original": "Excelente trabajo y mantenimiento. Altamente recomendable y responsable"
-    },
-    "likes": 0
+    }
   },
   {
     "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMODVhWFBnEAE!2m1!1s0x0:0x5bdf3f7eeec53582!3m1!1s2@1:CIHM0ogKEICAgICL85aXPg%7CCgwI_fHdswYQsJaA2gE%7C?hl=es-419",
@@ -179,7 +172,6 @@
     "snippet": "Excelente servicio",
     "extracted_snippet": {
       "original": "Excelente servicio"
-    },
-    "likes": 1
+    }
   }
 ]

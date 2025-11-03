@@ -3,6 +3,7 @@ import Maps from "@/components/Maps";
 import Subtitle from "@/components/Subtitle";
 import Title from "@/components/Title";
 import Clock from "@/icons/Clock";
+import DownArrow from "@/icons/DownArrow";
 import Mail from "@/icons/Mail";
 import Phone from "@/icons/Phone";
 import Pin from "@/icons/Pin";
@@ -16,14 +17,40 @@ function Footer() {
           <Title className="text-primary mb-3">Contacto</Title>
           <div className="flex flex-col gap-2">
             <a
-              href="tel:5492257589216"
+              href="tel:5492257550272"
               target="_blank"
-              className="flex flex-row items-center font-bold text-lg text-primary gap-2"
+              className="flex flex-col gap-2"
             >
-              <div className="h-5 w-5">
-                <Phone />
+              <div className="flex flex-row items-center font-semibold text-base text-primary gap-2">
+                <div className="h-5 w-5">
+                  <DownArrow />
+                </div>
+                Amilcar Gutiérrez (Escalador de árboles)
               </div>
-              (+54 9) 2257 589216
+              <div className="flex flex-row items-center font-bold text-lg text-primary gap-2">
+                <div className="h-5 w-5">
+                  <Phone />
+                </div>
+                (+54 9) 2257 550272
+              </div>
+            </a>
+            <a
+              href="tel:5492257506651"
+              target="_blank"
+              className="flex flex-col gap-2"
+            >
+              <div className="flex flex-row items-center font-semibold text-base text-primary gap-2">
+                <div className="h-5 w-5">
+                  <DownArrow />
+                </div>
+                Marcos Wolcan (Técnico forestal)
+              </div>
+              <div className="flex flex-row items-center font-bold text-lg text-primary gap-2">
+                <div className="h-5 w-5">
+                  <Phone />
+                </div>
+                (+54 9) 2257 506651
+              </div>
             </a>
             <div className="flex flex-row items-center font-bold text-lg text-primary gap-2">
               <div className="h-5 w-5">
@@ -42,14 +69,14 @@ function Footer() {
               contacto@miwa.com.ar
             </a>
             <a
-              href="https://www.google.com/maps/place/Av.+Elcano+1759,+San+Bernardo,+Provincia+de+Buenos+Aires/@-36.6996038,-56.6916392,17z/data=!3m1!4b1!4m5!3m4!1s0x959c6f05ec15f38d:0xbda2de5c4af2b3a2!8m2!3d-36.6996081!4d-56.6890643?entry=ttu"
+              href="https://www.google.com/maps/place/Los+Geranios+1228,+B7108+Costa+del+Este,+Provincia+de+Buenos+Aires/@-36.6492734,-56.7184741,12z/"
               target="_blank"
               className="flex flex-row items-center font-bold text-lg text-primary gap-2"
             >
               <div className="h-5 w-5">
                 <Pin />
               </div>
-              El Cano Nª 1759 San Bernardo - Partido de La Costa
+              Los Geranios 1228, Costa del Este - Partido de La Costa
             </a>
           </div>
         </div>

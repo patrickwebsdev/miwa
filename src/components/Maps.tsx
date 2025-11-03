@@ -19,8 +19,8 @@ function Maps() {
       )) as google.maps.MarkerLibrary;
 
       const position = {
-        lat: -36.69953918457031,
-        lng: -56.68932342529297,
+        lat: -36.61132362651963,
+        lng: -56.703764800140156,
       };
 
       const mapOptions: google.maps.MapOptions = {
